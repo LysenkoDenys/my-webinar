@@ -18,20 +18,27 @@
   </head>
   <body>
     <header id="header">
-      <img id="header-img" alt="logo" />
+      <img id="header-img" alt="logo" src="https://google.com" />
       <nav id="nav-bar">
         <ul>
-          <li class="nav-link"><a href="#"></a></li>
-          <li class="nav-link"><a href="#"></a></li>
-          <li class="nav-link"><a href="#"></a></li>
+          <li class="nav-link"><a href="#header"></a></li>
+          <li class="nav-link"><a href="#main"></a></li>
+          <li class="nav-link"><a href="#footer">footer</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <form id="form">
-        <input id="email" type="email" placeholder="enter your email" />
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input
+          id="email"
+          type="email"
+          placeholder="enter your email"
+          name="email"
+        />
+        <input id="submit" type="submit" target="_blank" />
       </form>
+      <video src="#" id="video" />
     </main>
-    <footer></footer>
+    <footer id="footer"></footer>
   </body>
 </html>

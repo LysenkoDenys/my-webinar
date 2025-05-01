@@ -1,0 +1,36 @@
+* {
+}
+
+body {
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#header-img {
+  height: 50px;
+  display: block;
+}
+
+#nav-bar {
+  display: flex;
+}
+
+#nav-bar ul {
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+  #nav-bar {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    flex-direction: column;
+  }
+}

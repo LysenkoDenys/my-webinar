@@ -1,7 +1,12 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>webinar</title>
+    <title>Welcome to My Webinar</title>
+    <link
+      rel="icon"
+      href="https://i.postimg.cc/ZRsn7qzy/web.png"
+      type="image/png"
+    />
     <link rel="stylesheet" href="styles.css" type="text/css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap"
@@ -22,9 +27,9 @@
         <img
           id="header-img"
           alt="logo"
-          src="https://i.postimg.cc/1XvGL8gG/video-conference-icon.png"
+          src="https://i.postimg.cc/ZRsn7qzy/web.png"
         />
-        <nav id="nav-bar">
+        <nav id="nav-bar" aria-label="Main Navigation">
           <ul>
             <li><a class="nav-link" href="#header">header</a></li>
             <li><a class="nav-link" href="#main">main</a></li>
@@ -36,37 +41,199 @@
     <main id="main">
       <h1>welcome to my webinar</h1>
       <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <label for="email" style="display: none">Email</label>
         <input
           id="email"
           type="email"
-          placeholder="enter your email"
+          placeholder="Enter your email"
           name="email"
+          required
         />
-        <input id="submit" type="submit" value="get started" target="_blank" />
+        <input id="submit" type="submit" value="get started" />
       </form>
-      <div id="features">
-        <ul>
-          <li>Great motivation</li>
-          <li>Positive experience</li>
-          <li>Practice goals</li>
-        </ul>
+
+      <section id="features">
+        <h2>Webinar Benefits</h2>
+
+        <details class="feature-category" open>
+          <summary><i class="fa-solid fa-star"></i> Great Motivation</summary>
+          <ul>
+            <li>
+              <blockquote>“You are always ready”</blockquote>
+              <ul>
+                <li>Action precedes confidence.</li>
+                <li>Start messy, improve as you go.</li>
+              </ul>
+            </li>
+            <li>
+              <blockquote>“Discomfort is the price of growth.”</blockquote>
+              <ul>
+                <li>The goal isn't to avoid fear; it's to act despite it.</li>
+                <li>Growth and comfort never coexist.</li>
+              </ul>
+            </li>
+            <li>
+              <blockquote>
+                “Motivation gets you started, systems keep you going.”
+              </blockquote>
+              <ul>
+                <li>Inspiration fades — habits endure.</li>
+                <li>Build structure, not just hype.</li>
+              </ul>
+            </li>
+          </ul>
+        </details>
+
+        <details class="feature-category">
+          <summary>
+            <i class="fa-solid fa-thumbs-up"></i> Positive Experience
+          </summary>
+          <ul>
+            <li>
+              <blockquote>
+                “Positive experiences aren’t just found — they’re created.”
+              </blockquote>
+              <ul>
+                <li>Joy is an intentional outcome, not an accidental one.</li>
+                <li>We shape our experience by how we show up.</li>
+              </ul>
+            </li>
+            <li>
+              <blockquote>
+                “Positive experience is not luxury — it’s fuel.”
+              </blockquote>
+              <ul>
+                <li>You perform better when you feel better.</li>
+                <li>Well-being isn't the reward, it's the resource.</li>
+              </ul>
+            </li>
+            <li>
+              <blockquote>
+                “Gratitude turns ordinary moments into extraordinary ones.”
+              </blockquote>
+              <ul>
+                <li>What you focus on expands.</li>
+                <li>
+                  The fastest way to a better day is to appreciate what you
+                  already have.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </details>
+
+        <details class="feature-category">
+          <summary><i class="fa-solid fa-bullseye"></i> Practice Goals</summary>
+          <ul>
+            <li>
+              <blockquote>“Don’t just set goals — set practices.”</blockquote>
+              <ul>
+                <li>Results are outcomes; practice is what gets you there.</li>
+                <li>Build the habit, and the habit builds the result.</li>
+              </ul>
+            </li>
+            <li>
+              <blockquote>
+                “You rise to the level of your systems, not your intentions.”
+              </blockquote>
+              <ul>
+                <li>Willpower fades — structure sticks.</li>
+                <li>
+                  Practice turns goals from wishful thinking into reality.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <blockquote>
+                “Fall in love with repetition — it’s how mastery begins.”
+              </blockquote>
+              <ul>
+                <li>Consistency > intensity.</li>
+                <li>The best performers practice more, not harder.</li>
+              </ul>
+            </li>
+          </ul>
+        </details>
+      </section>
+
+      <div id="video">
+        <iframe
+          aria-label="Webinar Introduction Video"
+          src="https://www.youtube.com/embed/3ehxW9MKRH0?si=OPf7WQ0wSeCE9Ijs"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        >
+        </iframe>
       </div>
-      <div>
-        <video
-          controls
-          src="https://www.youtube.com/watch?v=0PzSaMMg2cs&ab_channel=Marijan40cent"
-          id="video"
-        />
-      </div>
+
       <div id="prices">
         <ul>
-          <li>Basic</li>
-          <li>Extended</li>
-          <li>Platinum</li>
+          <li>
+            <div class="prices-block">
+              <h3>Basic</h3>
+              <p class="webinar-price">$500</p>
+              <ul>
+                <li>Access to the live webinar</li>
+                <li>Downloadable slides</li>
+                <li>Email Q&A follow-up</li>
+              </ul>
+              <input type="button" value="Buy" />
+            </div>
+          </li>
+          <li>
+            <div class="prices-block">
+              <h3>Extended</h3>
+              <p class="webinar-price">$900</p>
+              <ul>
+                <li>Everything in Basic</li>
+                <li>Access to the recording for 30 days</li>
+                <li>Bonus PDF toolkit</li>
+                <li>Private feedback session</li>
+              </ul>
+              <input type="button" value="Buy" />
+            </div>
+          </li>
+          <li>
+            <div class="prices-block">
+              <h3>Platinum</h3>
+              <p class="webinar-price">$1500</p>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-check-double"></i> All Extended features
+                </li>
+                <li>
+                  <i class="fa-solid fa-user-clock"></i> 1-on-1 coaching session
+                  (60 min)
+                </li>
+                <li>
+                  <i class="fa-solid fa-people-group"></i> Exclusive Slack
+                  community access
+                </li>
+                <li><i class="fa-solid fa-star"></i> Priority email support</li>
+              </ul>
+              <input type="button" value="Buy" />
+            </div>
+          </li>
         </ul>
       </div>
     </main>
     <footer id="footer">
+      <div class="footer-bottom">
+        <p>Privacy policy</p>
+        <p>Terms</p>
+        <p>
+          Contacts
+          <a href="https://www.facebook.com/profile.php?id=100001281440746"
+            ><i class="fa-brands fa-facebook"></i></a
+          ><a href="https://www.linkedin.com/in/lysenko-denys/"
+            ><i class="fa-brands fa-linkedin"></i></a
+          ><a href="https://github.com/LysenkoDenys"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </p>
+      </div>
       <p>&copy; 2025 Lysenko`s webinar. All rights reserved.</p>
     </footer>
   </body>

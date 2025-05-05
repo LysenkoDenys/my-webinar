@@ -24,6 +24,14 @@ body {
   align-items: center;
 }
 
+.header-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 20px;
+  height: 50px;
+}
+
 #header {
   position: fixed;
   top: 0;
@@ -34,16 +42,8 @@ body {
   background: #f4f4f4;
 }
 
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  height: 50px;
-}
-
 #header-img {
-  height: 50px;
+  height: 2.5rem;
   display: block;
 }
 
@@ -52,9 +52,13 @@ body {
   flex-direction: row;
 }
 
+.nav-link {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #7c8187;
+}
 .nav-link:hover {
-  color: #0a64ff;
-  text-decoration: underline;
+  color: #494a4c;
   transition: color 0.3s ease;
 }
 
@@ -70,7 +74,6 @@ body {
     width: 100%;
     height: auto;
     border-right: none;
-    border-bottom: 1px solid #ddd;
     flex-direction: column;
   }
 }
@@ -91,6 +94,7 @@ h3 {
   margin-top: 50px;
   max-width: 1200px;
   padding: 40px 20px;
+  background: #cdc9c9;
 }
 
 #form {
@@ -267,7 +271,7 @@ i:hover {
 .webinar-price {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #0a64ff;
+  color: #5c97fe;
   margin: 10px 0;
 }
 
@@ -279,7 +283,7 @@ i:hover {
 .prices-block input[type='button'] {
   margin-top: 15px;
   padding: 10px 20px;
-  background-color: #0a64ff;
+  background-color: #0847b0;
   color: white;
   border: none;
   border-radius: 5px;

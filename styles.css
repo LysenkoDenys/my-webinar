@@ -37,11 +37,11 @@ body {
   left: 0;
   width: 100%;
   min-height: 60px;
-  max-height: 100px;
   z-index: 1000;
   background-color: #767dae;
   color: #f1f1f1;
   padding: 0.5rem 2rem;
+  transition: all 0.3s ease;
 }
 
 .header-container {
@@ -110,7 +110,7 @@ h1 {
 }
 
 #main {
-  margin-top: 50px;
+  margin-top: 60px;
   max-width: 1200px;
   width: 100%;
   padding: 40px 20px;
